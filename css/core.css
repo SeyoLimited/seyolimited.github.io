@@ -759,8 +759,31 @@ mark {
     font-size: 90%;
     text-transform: uppercase;
 }
-.blockquote {
-    font-size: 1.25rem;
+
+blockquote{
+  font-size: 1.25em;
+  width:60%;
+  margin:auto auto;
+  color: #19253cff;
+  padding:1em 30px .5em 75px;
+  border-left:8px solid #19253cff ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
 }
 .blockquote-footer {
     display: block;
@@ -10566,3 +10589,25 @@ textarea:focus {
 .spacer {
     margin-bottom:25px;
 }
+.post li {
+    color:#19253cff;
+}
+
+
+.post-card .card:hover{
+    filter:drop-shadow(0 0 0.3rem grey);
+    
+}
+
+a.card * {
+    text-decoration:none!important;
+}
+
+.hidden {
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
+
