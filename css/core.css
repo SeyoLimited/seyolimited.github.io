@@ -10586,6 +10586,28 @@ textarea:focus {
     }
 }
 
+.mobile-hidden {
+    display:none;
+}
+
+h5.card-title{
+    font-weight:500;
+}
+
+@media (min-width: 992px) {
+    h5.latest-card-title {
+	font-size: 3em;
+	font-weight:500;
+    }
+    .desktop-hidden {
+	display:none;
+    }
+    .mobile-hidden {
+	display:block;
+    }
+}
+
+
 .spacer {
     margin-bottom:25px;
 }
